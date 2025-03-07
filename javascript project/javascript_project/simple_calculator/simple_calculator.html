@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height:60vh;
+            border: 2px solid black;
+            background-color: #fff;
+            /* background-color: lightgray; */
+            
+            width: 500px;
+            margin-left: 500px;
+            margin-top: 150px;
+
+        }
+        input, button, select{
+            height: 80px;
+            width: 400px;   
+            font-size: 20px;
+            margin: 2px;
+        }   
+        button{
+            background-color:steelblue;
+            color: white;
+        }
+        input{
+            text-align: center;
+        }
+        option{
+            font-size: 20px;
+            text-align: center;
+            
+        }
+        #result{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            height: 30px;
+            font-size: 30px;
+        }
+    </style>
+    <script src="simple_calculator.js" defer></script>
+    
+</head>
+<body>
+    <form id="calculator">
+        <input type="text" id="num1" placeholder="Enter First Number">
+        <input type="text" id="num2" placeholder="Enter Second Number">
+        <select id="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select>
+        <button type="button" onclick="performCalculation()">Calculate</button>
+        <div id="result"></div>
+    </form>
+
+</body>
+</html>

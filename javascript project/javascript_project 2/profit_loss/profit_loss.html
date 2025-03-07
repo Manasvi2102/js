@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit and Loss Calculation</title>
+    <script src="profit_loss.js" defer></script>
+    <style>
+        .conatiner {
+            width: 40%;
+            margin-top: 250px;
+            margin-left: 450px;
+            text-align: center;
+            background-color: white;
+            border: 2px solid white;
+            box-shadow: 0px 0px 6px black;
+        }
+
+        input {
+            padding: 5px;
+            width: 50%;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 5px 10px;
+            width: 20%;
+            height: 40px;
+            background-image: linear-gradient(to right, #434343 0%, black 100%);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <h1>Profit & Loss</h1>
+        <label for="costPrice">Cost price -</label>
+        <input type="text" id="costPrice" placeholder="Enter Cost Price"><br><br>
+        <label for="sellPrice">Sell price -</label>
+        <input type="text" id="sellPrice" placeholder="Enter Sell Price"><br><br>
+        <button onclick="calculator()" id="btn">Calculate</button><br>
+        <p id="answer"></p>
+    </div>
+</body>
+
+</html>

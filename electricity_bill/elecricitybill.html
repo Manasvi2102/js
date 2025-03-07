@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Generate</title>
+    <script src="elecricitybill.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Righteous', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            margin-top: 190px;
+            margin-left: 445px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 55%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+            color:black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Elecricity Bill</h1><br>
+        <input type="text" id="unit" placeholder="unit"><br><br>
+        <button onclick="bill()" id="check">CALCULATE</button><br>
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>
